@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    //hàm không chứa tham số
+    function in_BCC2(){
+        console.log("2.1=2")
+        console.log("2.10=20")
+    }
+    in_BCC2()
+    //hàm chứa 1 tham số
+    function thongTinHinhVuong(canh){
+        console.log("Hình vuông có cạnh ="+canh)
+
+    }
+    //hàm chứa 2 tham số
+    function thongTinHinhChuNhat(dai,rong){
+        console.log("HCN có chiều dài = "+dai+"chiều rộng= "+rong)
+    }
+    thongTinHinhVuong(6);
+    thongTinHinhChuNhat(6,3)
+    // function có 2 tham số
+    function mieuTaMe(hinhAnh,dang){
+        console.log(`Tóc mẹ bạc màu ${hinhAnh} phủ kín đôi vai ${dang}`)
+    }
+    mieuTaMe("Mây","gầy")
+    // vì là kí tự nên "Mây" và "gầy" phải bỏ trong ngoăc kép
+    // hàm tính toán tự định nghĩa: return
+    function tong(a,b){
+        return a+b
+    }
+    function tich(a,b,c){
+        return a*b*c
+    }
+    function thuong(a,b){
+        return a/b
+    }
+    console.log(tong(2,3))
+    console.log(tich(2,3,4))
+    console.log(thuong(4,2))
+    // công thức tính toán tự động
+    console.log(Math.max(2,3,4))
+    console.log(Math.round(4.9))
+    console.log(Math.pow(2,3)) //= alert(Math.pow(2,3))
+
+    //Ví dụ: Câu 1: Tính diện tích hcn
+    function dienTichHCN(dai,rong){
+        return dai*rong;
+    }
+    // Câu 2: Tính diện tích hình trong
+    function dienTichHinhTron(r){
+        return 3.14*Math.pow(r,2);
+    }
+    console.log(dienTichHCN(3,4))
+    console.log(dienTichHinhTron(5.4))
+
+    let x=3;
+    var r=3.6;
+    var s="Mèo"
+    let isActive=true// boolen (tru,false) 
+    const pi=3.14
+    // Cho dãy số {1,1,2,3,5,8}
+    // arr[0]=1, arr[1]=1,...
+    let arr=[1,1,2,3,5,8]
+    console.log(arr[4])
+    // sẽ cho ra số thứ 4 là số 5
+    //Kiểu dữ liệu object
+    //Ở ví dụ này object là bingan1 có 2 thuộc tính là "mau" và "mean"
+    let bingan1= {"mau":"Đỏ","mean":"Hồi ức đau thương"}
+    console.log(bingan1.mau)
+    console.log(bingan1.mean)
+
+
+
+
+   </script> 
+</body>
+</html>
